@@ -1,0 +1,15 @@
+---
+type Props = {
+  id: string;
+  background: string;
+};
+
+const { id, background } = Astro.props;
+---
+
+<section
+  id={id}
+  class={`px-[3%] py-[5%] lg:px-[5%] lg:py-[10%] mx-auto ${background} flex flex-col md:justify-center`}
+>
+  <slot />
+</section>

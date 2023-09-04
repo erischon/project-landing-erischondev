@@ -1,0 +1,14 @@
+---
+type Props = {
+  background?: string;
+  otherClass?: string;
+};
+
+const { background, otherClass } = Astro.props;
+---
+
+<div
+  class={`${background} rounded-3xl p-5 lg:p-20 shadow-lg shadow-black/20 ${otherClass} max-w-4xl mx-auto`}
+>
+  <slot />
+</div>
