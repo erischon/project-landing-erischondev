@@ -1,5 +1,61 @@
 ---
+import Icon from "astro-icon";
 
+import Container from "../Container.astro";
 ---
 
-<footer>copyright</footer>
+<footer class="px-5 lg:px-0 bg-gray-900 text-gray-100 py-10">
+  <Container>
+    <div class="grid md:grid-cols-3 gap-10 justify-around">
+      <div class="">
+        <h3 class="text-xl font-bold mb-5">Eri Schön</h3>
+
+        <p class="mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magni
+          debitis repellendus natus velit minima assumenda aspernatur quo
+          voluptatem perspiciatis.
+        </p>
+
+        <ul class="flex gap-5">
+          <li><a href=""><Icon name="simple-icons:linkedin" /></a></li>
+          <li><a href=""><Icon name="simple-icons:github" /></a></li>
+          <li><a href=""><Icon name="simple-icons:twitter" /></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-5">Company</h3>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-5">Services</h3>
+
+        <ul>
+          <li><a href="/">Audit de code</a></li>
+          <li><a href="/">Test Unitaire</a></li>
+          <li><a href="/">Test E2E</a></li>
+        </ul>
+      </div>
+    </div>
+  </Container>
+</footer>
+
+<div class="p-5 lg:p-0 bg-indigo-900 text-gray-100">
+  <Container specificStyle="py-5">
+    <div class="text-center lg:text-left">
+      &copy; Copyright 2023-2024, All rights reserved by Eri Schön
+    </div>
+  </Container>
+</div>
+
+<style>
+  [astro-icon] {
+    width: 2em;
+    height: 2em;
+  }
+</style>
