@@ -1,11 +1,15 @@
 ---
-import { metrics } from "../../data";
+import Container from "../Container.astro";
 import MetricsCard from "../MetricsCard.astro";
 import Section from "../Section.astro";
+
+import { metrics } from "../../data";
 ---
 
-<Section id="metrics" specificStyle="py-5">
-  <div class="grid md:grid-cols-12 w-full justify-center gap-4">
-    {metrics.map((metric) => <MetricsCard {...metric} />)}
-  </div>
+<Section id="metrics" specificStyle="">
+  <Container>
+    <div class="grid md:grid-cols-12 w-full justify-center gap-4">
+      {metrics.map((metric) => <MetricsCard {...metric} />)}
+    </div>
+  </Container>
 </Section>

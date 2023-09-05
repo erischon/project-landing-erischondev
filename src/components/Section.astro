@@ -1,16 +1,12 @@
 ---
 type Props = {
   id: string;
-  background?: string;
   specificStyle?: string;
 };
 
-const { id, background, specificStyle } = Astro.props;
+const { id, specificStyle } = Astro.props;
 ---
 
-<section
-  id={id}
-  class={`${background} ${specificStyle} max-w-6xl mx-auto px-2 py-[5%] lg:px-0`}
->
+<section id={id} class={`${specificStyle} px-5 py-[5%] lg:px-0`}>
   <slot />
 </section>

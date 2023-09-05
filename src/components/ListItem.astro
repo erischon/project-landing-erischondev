@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon";
+
+type Props = {
+  icon?: string;
+  paragraph: string;
+};
+
+const { icon, paragraph } = Astro.props;
+---
+
+<div class="flex justify-normal items-center">
+  <div class="mr-5">
+    <Icon name="emojione-v1:cross-mark" />
+  </div>
+
+  <p>
+    Vous devez fournir un code rapidement mais vous n’arrivez pas à tout faire :
+    développer de nouvelles fonctionnalités et coder des tests robustes.
+  </p>
+</div>
+
+<style>
+  [astro-icon] {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 1rem;
+    height: 1rem;
+  }
+</style>

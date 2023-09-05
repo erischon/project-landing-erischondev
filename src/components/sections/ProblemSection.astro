@@ -1,46 +1,66 @@
 ---
+import { Icon } from "astro-icon";
+
 import Section from "../Section.astro";
 import Container from "../Container.astro";
 import SectionHeader from "../SectionHeader.astro";
+import ProblemCard from "../ProblemCard.astro";
 
 import { sections } from "../../data/index.js";
 
 const { header, title } = sections.problem;
 ---
 
-<Section id="problem" background="bg-indigo-800">
-  <SectionHeader header={header} title={title} />
+<Section id="problem" specificStyle="bg-indigo-100">
   <Container>
-    <div class="grid md:grid-cols-12">
+    <div class="grid lg:grid-cols-12 gap-5">
       <div
-        class="md:col-span-6 order-1 md:order-2 md:pl-5 text-lg lg:text-xl flex flex-col gap-5"
+        class="lg:col-span-8 order-1 md:order-2 md:pl-5 text-lg lg:text-xl flex flex-col gap-5"
       >
-        <p class="">
+        <SectionHeader header={header} title={title} />
+
+        <p>
           Vous devez fournir un code rapidement mais vous n’arrivez pas à tout
           faire : développer de nouvelles fonctionnalités et coder des tests
           robustes.
         </p>
 
-        <p class="">
+        <p>
           Vous avez remis à demain la création des tests, quand vous aurez plus
           de temps et de ressources à leur accorder. Malheureusement ce demain
           n’arrive jamais et votre code grossi à vue d’oeil sans tests
           convenables.
         </p>
 
-        <p class="">
+        <p>
           Vous avez du mal à <strong>maintenir votre code</strong> et le{" "}
           <strong>développement est ralenti</strong>, résultat des courses vous
           n’arrivez pas à faire évoluer votre application.
         </p>
       </div>
 
-      <div
-        class="relative w-[14rem] h-[14rem] lg:w-[20rem] lg:h-[20rem] mx-auto mt-5 lg:mt-0 md:col-span-6 order-2 md:order-1"
-      >
-        <img src="/images/stress.png" alt="" class="" />
+      <div class="lg:col-span-4 my-auto">
+        <img src="/images/stress.png" alt="" class="object-fill" />
       </div>
+    </div>
+
+    <div class="flex justify-around items-center gap-5 py-5">
+      <ProblemCard paragraph="" />
+      <ProblemCard paragraph="" />
+      <ProblemCard paragraph="" />
+      <ProblemCard paragraph="" />
     </div>
   </Container>
 </Section>
- ../../data/index.js
+
+<style>
+  [astro-icon] {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 1rem;
+    height: 1rem;
+  }
+</style>
