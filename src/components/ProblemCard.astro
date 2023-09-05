@@ -1,22 +1,23 @@
 ---
 type Props = {
   title: string;
-  paragraph: string;
+  description: string;
   specificStyle?: string;
 };
 
-const { title, paragraph, specificStyle } = Astro.props;
+const { title, description, specificStyle } = Astro.props;
 ---
 
 <div
-  class=`${specificStyle} flex flex-col justify-normal items-center rounded-lg shadow-lg p-5`
+  class=`${specificStyle} flex flex-col justify-normal items-center rounded-lg shadow-lg p-5 bg-gray-100`
 >
   <div>
-    <div class="flex mb-5 text-xl font-semibold">Vite</div>
+    <div class="flex mb-5 text-xl font-semibold uppercase">
+      {title}
+    </div>
 
-    <p class="text-lg">
-      Vous devez fournir un code rapidement mais vous n’arrivez pas à tout faire
-      : développer de nouvelles fonctionnalités et coder des tests robustes.
+    <p class="text-lg text-gray-500">
+      {description}
     </p>
   </div>
 </div>

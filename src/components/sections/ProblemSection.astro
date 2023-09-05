@@ -6,7 +6,7 @@ import Container from "../Container.astro";
 import SectionHeader from "../SectionHeader.astro";
 import ProblemCard from "../ProblemCard.astro";
 
-import { sections } from "../../data/index.js";
+import { sections, problems } from "../../data/index.js";
 
 const { header, title } = sections.problem;
 ---
@@ -19,24 +19,25 @@ const { header, title } = sections.problem;
       >
         <SectionHeader header={header} title={title} />
 
-        <p>
-          Vous devez fournir un code rapidement mais vous n’arrivez pas à tout
-          faire : développer de nouvelles fonctionnalités et coder des tests
-          robustes.
+        <p class="mb-10 text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          deserunt mollitia quia, necessitatibus autem reiciendis sint nisi
+          architecto iste, consectetur eveniet asperiores illum repudiandae?
+          Exercitationem corporis praesentium laudantium tempora repudiandae
+          delectus hic corrupti aperiam.
         </p>
 
-        <p>
-          Vous avez remis à demain la création des tests, quand vous aurez plus
-          de temps et de ressources à leur accorder. Malheureusement ce demain
-          n’arrive jamais et votre code grossi à vue d’oeil sans tests
-          convenables.
-        </p>
-
-        <p>
-          Vous avez du mal à <strong>maintenir votre code</strong> et le{" "}
-          <strong>développement est ralenti</strong>, résultat des courses vous
-          n’arrivez pas à faire évoluer votre application.
-        </p>
+        <button
+          class="py-5 px-15 text-xl font-bold bg-indigo-500 text-gray-100 rounded-lg shadow-md w-64"
+        >
+          <a
+            href="https://calendly.com/erischon/contact"
+            target="_blank"
+            class="animate-bounce"
+          >
+            En savoir plus
+          </a>
+        </button>
       </div>
 
       <div class="lg:col-span-4 my-auto justify-self-center">
@@ -51,9 +52,7 @@ const { header, title } = sections.problem;
     <div
       class="flex flex-col md:flex-row justify-around items-center gap-5 pt-10"
     >
-      <ProblemCard title="" paragraph="" specificStyle="bg-gray-100" />
-      <ProblemCard title="" paragraph="" specificStyle="bg-gray-100" />
-      <ProblemCard title="" paragraph="" specificStyle="bg-gray-100" />
+      {problems.map((problem) => <ProblemCard {...problem} />)}
     </div>
   </Container>
 </Section>

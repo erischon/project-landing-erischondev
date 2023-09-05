@@ -158,4 +158,22 @@ export const sections = {
   },
 };
 
+export const problems = [
+  {
+    title: "Des maintenances difficiles",
+    description:
+      "Vous avez remis à demain la création des tests, quand vous aurez plus de temps et de ressources à leur accorder. Malheureusement ce demain n’arrive jamais et votre code grossi à vue d’oeil sans tests convenables.",
+  },
+  {
+    title: "Beaucoup de bugs",
+    description:
+      "Vous avez remis à demain la création des tests, quand vous aurez plus de temps et de ressources à leur accorder. Malheureusement ce demain n’arrive jamais et votre code grossi à vue d’oeil sans tests convenables.",
+  },
+  {
+    title: "Une évolution ralentie",
+    description:
+      "Vous avez remis à demain la création des tests, quand vous aurez plus de temps et de ressources à leur accorder. Malheureusement ce demain n’arrive jamais et votre code grossi à vue d’oeil sans tests convenables.",
+  },
+];
+
 // Blog Informations
