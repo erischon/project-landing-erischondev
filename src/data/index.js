@@ -6,6 +6,8 @@
 // import { ImArrowUpRight, ImArrowDownRight } from "react-icons/im";
 // import { LuFileSearch } from "react-icons/lu";
 
+import { Icon } from "astro-icon";
+
 // SEO data
 export const seoData = {
   title: "The Dizalch Project",
@@ -15,19 +17,6 @@ export const seoData = {
   image: "https://thedizalchproject.vercel.app/images/og-image.png",
   twitter: "@erischon",
 };
-
-// Revalidate times
-export const revalidateTime = {
-  blog: 60 * 60 * 24, // 24 hours
-  projects: 60 * 60 * 24, // 24 hours
-};
-
-// Portfolio informations
-// export const tagLine = "Votre ressource pour une application web sur mesure";
-// export const tagLine = "La ressource Qualité pour votre application web React";
-// export const tagLine = "L'Artisan Qualité pour votre application web React";
-export const tagLine = "Votre ressource Qualité pour votre appli web React";
-export const projectsListPageSize = 6;
 
 export const services = [
   {
@@ -84,17 +73,17 @@ export const metrics = [
   {
     title: "Tests créés",
     value: "100+",
-    icon: "",
+    icon: "file-icons:test-react",
   },
   {
-    title: "Appli. optimisées",
+    title: "Code documenté",
     value: "30+",
-    icon: "",
+    icon: "heroicons-outline:document-text",
   },
   {
-    title: "Années d'expériences",
+    title: "Expérience",
     value: "3+",
-    icon: "",
+    icon: "vaadin:tools",
   },
 ];
 
