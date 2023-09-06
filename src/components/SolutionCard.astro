@@ -1,0 +1,31 @@
+---
+import Icon from "astro-icon";
+
+type Props = {
+  title: string;
+  description: string;
+  icon: string;
+  specificStyle?: string;
+};
+
+const { title, description, icon, specificStyle } = Astro.props;
+---
+
+<div
+  class=`${specificStyle} flex flex-col rounded-lg shadow-lg p-5 bg-indigo-50 flex-grow gap-4`
+>
+  <Icon
+    name={icon}
+    class="text-indigo-500 w-[5rem] shadow-md rounded-full p-4"
+  />
+
+  <div>
+    <div class="flex mb-2 text-xl font-semibold uppercase">
+      {title}
+    </div>
+
+    <p class="text-lg text-gray-500">
+      {description}
+    </p>
+  </div>
+</div>

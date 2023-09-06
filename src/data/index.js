@@ -181,21 +181,25 @@ export const solutions = [
   {
     title: "Analyse",
     description:
-      "Analysant votre application pour identifier les points à améliorer",
+      "Analyser votre application pour identifier les points à améliorer",
+    icon: "vaadin:tools",
   },
   {
     title: "Documentation",
-    description: "Documentant votre code de manière claire et concise",
+    description: "Documenter votre code de manière claire et concise",
+    icon: "heroicons-outline:document-text",
   },
   {
     title: "Tests Unitaires",
     description:
-      "Créant des tests unitaires pour garantir le bon fonctionnement de votre code",
+      "Créer des tests unitaires pour garantir le bon fonctionnement de votre code",
+    icon: "file-icons:test-react",
   },
   {
     title: "Tests E2E",
     description:
-      "Créant des tests e2e pour tester les interactions des utilisateurs avec votre application",
+      "Créer des tests e2e pour tester les interactions des utilisateurs avec votre application",
+    icon: "mdi:test-tube",
   },
 ];
 

@@ -4,6 +4,7 @@ import Icon from "astro-icon";
 import Section from "../Section.astro";
 import Container from "../Container.astro";
 import SectionHeader from "../SectionHeader.astro";
+import SolutionCard from "../SolutionCard.astro";
 
 import { sections, solutions } from "../../data/index.js";
 
@@ -31,24 +32,10 @@ const { header, title } = sections.solution;
           la création de tests unitaires et de tests e2e.
         </p>
 
-        <p>
+        <p class="mb-10">
           Je peux vous aider à réduire votre dette technique et à rendre votre
-          application plus facile à maintenir en :
+          application plus facile à maintenir.
         </p>
-
-        <ul class="flex flex-col gap-2 mb-10">
-          {
-            solutions.map((solution) => (
-              <li class="flex items-start gap-2 mb-2">
-                <Icon
-                  name="carbon:checkmark-filled"
-                  class="text-amber-500 w-[1.5em]"
-                />
-                {solution.description}
-              </li>
-            ))
-          }
-        </ul>
 
         <button
           class="py-5 px-15 text-xl font-bold bg-indigo-500 text-gray-100 rounded-lg shadow-md w-64"
@@ -62,6 +49,12 @@ const { header, title } = sections.solution;
           </a>
         </button>
       </div>
+    </div>
+
+    <div
+      class="grid lg:grid-cols-4 md:flex-row justify-around items-stretch gap-5 pt-20"
+    >
+      {solutions.map((solution) => <SolutionCard {...solution} />)}
     </div>
   </Container>
 </Section>
