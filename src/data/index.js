@@ -134,11 +134,12 @@ export const gains = [
 export const sections = {
   problem: {
     header: "Un problème",
-    title: "Bloqué et pas assez de ressources pour avancer ?!",
+    title: "Votre application React est un cauchemar à maintenir ?",
   },
   solution: {
     header: "Une solution",
-    title: "Une ressource Qualité pour votre application web React",
+    title:
+      "Une ressource Qualité pour rendre votre application React plus fiable et évolutive",
   },
   services: {
     header: "Ce que nous faisons pour vous",
@@ -173,6 +174,28 @@ export const problems = [
     title: "Une évolution ralentie",
     description:
       "Vous avez remis à demain la création des tests, quand vous aurez plus de temps et de ressources à leur accorder. Malheureusement ce demain n’arrive jamais et votre code grossi à vue d’oeil sans tests convenables.",
+  },
+];
+
+export const solutions = [
+  {
+    title: "Analyse",
+    description:
+      "Analysant votre application pour identifier les points à améliorer",
+  },
+  {
+    title: "Documentation",
+    description: "Documentant votre code de manière claire et concise",
+  },
+  {
+    title: "Tests Unitaires",
+    description:
+      "Créant des tests unitaires pour garantir le bon fonctionnement de votre code",
+  },
+  {
+    title: "Tests E2E",
+    description:
+      "Créant des tests e2e pour tester les interactions des utilisateurs avec votre application",
   },
 ];
 
