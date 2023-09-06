@@ -181,18 +181,18 @@ export const solutions = [
   {
     title: "Analyse",
     description:
-      "Analyser votre application pour identifier les points à améliorer",
+      "Analyser votre application pour identifier les points à améliorer.",
     icon: "vaadin:tools",
   },
   {
     title: "Documentation",
-    description: "Documenter votre code de manière claire et concise",
+    description: "Documenter votre code de manière claire et concise.",
     icon: "heroicons-outline:document-text",
   },
   {
     title: "Tests Unitaires",
     description:
-      "Créer des tests unitaires pour garantir le bon fonctionnement de votre code",
+      "Créer des tests unitaires pour garantir le bon fonctionnement de votre code.",
     icon: "file-icons:test-react",
   },
   {

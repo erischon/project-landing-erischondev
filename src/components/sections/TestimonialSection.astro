@@ -1,0 +1,21 @@
+---
+import Section from "../Section.astro";
+import Container from "../Container.astro";
+import SectionHeader from "../SectionHeader.astro";
+import TestimonialCard from "../TestimonialCard.astro";
+
+import { testimonials } from "../../data";
+import { sections } from "../../data/index.js";
+
+const { header, title } = sections.testimonials;
+---
+
+<Section id="testimonials" specificStyle="bg-indigo-100">
+  <Container>
+    <SectionHeader header={header} title={title} style="center" />
+
+    <div class="grid md:grid-cols-12 w-full justify-center gap-4 py-10">
+      {testimonials.map((testimonial) => <TestimonialCard {...testimonial} />)}
+    </div>
+  </Container>
+</Section>
