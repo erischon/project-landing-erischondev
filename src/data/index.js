@@ -27,7 +27,7 @@ export const services = [
   },
   {
     title: "Testing",
-    description: "Tests fonctionnels et E2E",
+    description: "Tests fonctionnels et end-to-end",
     icon: "",
     isActive: true,
   },
@@ -134,12 +134,12 @@ export const gains = [
 export const sections = {
   problem: {
     header: "Un problème",
-    title: "Votre application React est un cauchemar à maintenir ?",
+    title:
+      "Votre application React est devenu complexe et difficile à maintenir ?",
   },
   solution: {
     header: "Une solution",
-    title:
-      "Une ressource Qualité pour rendre votre application React plus fiable et évolutive",
+    title: "Augmenter la Fiabilité et la Qualité de votre code",
   },
   services: {
     header: "Ce que nous faisons pour vous",
@@ -196,9 +196,9 @@ export const solutions = [
     icon: "file-icons:test-react",
   },
   {
-    title: "Tests E2E",
+    title: "Tests End-to-End",
     description:
-      "Créer des tests e2e pour tester les interactions des utilisateurs avec votre application",
+      "Créer des tests end-to-end pour tester les interactions des utilisateurs avec votre application",
     icon: "mdi:test-tube",
   },
 ];

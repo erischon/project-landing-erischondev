@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader.astro";
 
 import { sections, cta } from "../../data/index.js";
 
-const { header, title } = sections.services;
+const { header, title } = sections.solution;
 ---
 
 <Section id="solution" specificStyle="">
@@ -25,13 +25,19 @@ const { header, title } = sections.services;
         <SectionHeader header={header} title={title} />
 
         <p class="">
-          Je suis un freelance spécialisé dans la documentation de code React,
-          la création de tests unitaires et de tests e2e.
+          Pour que tout aille comme vous le souhaitez, il faudrait que votre
+          application soit fiable, ai un haut niveau de qualité et une faible
+          dette technique.
+        </p>
+
+        <p>
+          Et vous savez certainement ce qu’il manque : une documentation solide
+          et des tests automatisés efficaces.
         </p>
 
         <p class="mb-10">
-          Je peux vous aider à réduire votre dette technique et à rendre votre
-          application plus facile à maintenir.
+          La documentation du code et les tests sont des éléments essentiels
+          pour garantir la qualité et la fiabilité de votre application.
         </p>
 
         <button
