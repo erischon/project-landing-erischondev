@@ -1,14 +1,11 @@
 ---
-import Icon from "astro-icon";
-
 import Section from "../Section.astro";
 import Container from "../Container.astro";
 import SectionHeader from "../SectionHeader.astro";
-import SolutionCard from "../SolutionCard.astro";
 
-import { sections, solutions } from "../../data/index.js";
+import { sections } from "../../data/index.js";
 
-const { header, title } = sections.solution;
+const { header, title } = sections.services;
 ---
 
 <Section id="solution" specificStyle="">
@@ -23,7 +20,7 @@ const { header, title } = sections.solution;
       </div>
 
       <div
-        class="order-2 lg:order-1 lg:col-span-8 md:pl-5 text-lg lg:text-xl flex flex-col gap-5"
+        class="order-2 lg:order-1 lg:col-span-8 lg:pr-5 text-lg lg:text-xl flex flex-col gap-5"
       >
         <SectionHeader header={header} title={title} />
 
@@ -49,12 +46,6 @@ const { header, title } = sections.solution;
           </a>
         </button>
       </div>
-    </div>
-
-    <div
-      class="grid lg:grid-cols-4 md:flex-row justify-around items-stretch gap-5 pt-20"
-    >
-      {solutions.map((solution) => <SolutionCard {...solution} />)}
     </div>
   </Container>
 </Section>

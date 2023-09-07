@@ -1,0 +1,22 @@
+---
+import Section from "../Section.astro";
+import Container from "../Container.astro";
+import SectionHeader from "../SectionHeader.astro";
+import SolutionCard from "../SolutionCard.astro";
+
+import { sections, solutions } from "../../data/index.js";
+
+const { header, title } = sections.services;
+---
+
+<Section id="solution" specificStyle="bg-indigo-100">
+  <Container>
+    <SectionHeader header={header} title={title} />
+
+    <div
+      class="grid sm:grid-cols-2 lg:grid-cols-4 md:flex-row justify-around items-stretch gap-5 py-10"
+    >
+      {solutions.map((solution) => <SolutionCard {...solution} />)}
+    </div>
+  </Container>
+</Section>
