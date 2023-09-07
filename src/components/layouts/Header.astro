@@ -1,5 +1,5 @@
 ---
-
+import { cta } from "../../data";
 ---
 
 <header
@@ -19,7 +19,7 @@
     <button
       class="py-2 px-6 border-2 rounded-lg border-indigo-700 text-lg lg:text-xl font-bold"
     >
-      <a href="">Prendre rdv</a>
+      <a href={cta.internalUrl}>{cta.button}</a>
     </button>
   </div>
 </header>

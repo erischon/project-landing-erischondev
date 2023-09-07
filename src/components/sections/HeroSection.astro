@@ -1,6 +1,8 @@
 ---
-import Container from "../Container.astro";
 import Section from "../Section.astro";
+import Container from "../Container.astro";
+
+import { cta } from "../../data";
 ---
 
 <Section id="hero">
@@ -22,13 +24,7 @@ import Section from "../Section.astro";
         <button
           class="py-5 px-15 text-xl font-bold bg-indigo-500 text-gray-100 rounded-lg shadow-md w-64"
         >
-          <a
-            href="https://calendly.com/erischon/contact"
-            target="_blank"
-            class="animate-bounce"
-          >
-            En savoir plus
-          </a>
+          <a href={cta.internalUrl}>{cta.button}</a>
         </button>
       </div>
 

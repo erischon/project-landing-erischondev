@@ -1,0 +1,39 @@
+---
+import Section from "../Section.astro";
+import Container from "../Container.astro";
+
+import { sections } from "../../data/index.js";
+
+const { header, title } = sections.services;
+---
+
+<Section id="cta" specificStyle="bg-indigo-500">
+  <Container
+    specificStyle="max-w-4xl flex flex-col items-center text-gray-100 py-20"
+  >
+    <h2 class="text-6xl font-bold text-center mb-10">
+      Vous voulez vraiment améliorer votre code React ?
+    </h2>
+
+    <div class="text-center text-xl mb-20 max-w-xl">
+      <p class="text-2xl font-semibold mb-5">Votre prochaine étape :</p>
+
+      <p class="text-2xl mb-5">
+        Réserver un call meet de 15 minutes avec moi pour échanger sur votre
+        projet et de vos besoins.
+      </p>
+
+      <p class="text-2xl">(ce rdv est gratuit et sans engagement)</p>
+    </div>
+
+    <div>
+      <button
+        class="py-5 px-16 border-2 border-amber-500 rounded-lg bg-amber-500 text-lg lg:text-3xl font-bold text-gray-900"
+      >
+        <a href="https://calendly.com/erischon/contact" target="_blank"
+          >Réserver votre rdv</a
+        >
+      </button>
+    </div>
+  </Container>
+</Section>

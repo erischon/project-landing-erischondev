@@ -203,4 +203,11 @@ export const solutions = [
   },
 ];
 
+export const cta = {
+  title: "Prêt à améliorer la qualité de votre application ?",
+  button: "En savoir plus",
+  internalUrl: "/#cta",
+  url: "https://calendly.com/erischon/contact",
+};
+
 // Blog Informations
