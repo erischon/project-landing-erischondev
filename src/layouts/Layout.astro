@@ -5,6 +5,8 @@ import "@fontsource/zilla-slab";
 import Header from "../components/layouts/Header.astro";
 import Footer from "../components/layouts/Footer.astro";
 
+import { seoData } from "../data";
+
 type Props = {
   title: string;
 };
@@ -16,9 +18,25 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    {/* SEO */}
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="title" content={seoData.title} />
+    <meta name="description" content={seoData.description} />
+    <meta name="image" content={seoData.image} />
+
+    <meta property="og:title" content={seoData.title} />
+    <meta property="og:description" content={seoData.description} />
+    <meta property="og:image" content={seoData.image} />
+    <meta property="og:url" content={seoData.url} />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:creator" content={seoData.twitter} />
+    <meta name="twitter:title" content={seoData.title} />
+    <meta name="twitter:description" content={seoData.description} />
+    <meta name="twitter:image" content={seoData.image} />
 
     <link rel="icon" type="image/ico" href="/favicon.ico" />
 

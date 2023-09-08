@@ -10,11 +10,11 @@ import { Icon } from "astro-icon";
 
 // SEO data
 export const seoData = {
-  title: "The Dizalch Project",
-  description: "A freelance web application project.",
+  title: "Eric Schön - Tech Debt",
+  description: "Augmenter la Fiabilité et la Qualité de votre code React",
   author: [{ name: "Eri Schön", url: "https://www.erischon.dev" }],
-  url: "https://thedizalchproject.vercel.app/",
-  image: "https://thedizalchproject.vercel.app/images/og-image.png",
+  url: "https://techdebt.erischon.dev/",
+  image: "https://techdebt.erischon.dev/favicon.ico",
   twitter: "@erischon",
 };
 
