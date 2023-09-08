@@ -2,8 +2,10 @@
 import Section from "../Section.astro";
 import Container from "../Container.astro";
 import SectionHeader from "../SectionHeader.astro";
+import MetricsCard from "../MetricsCard.astro";
 
 import { sections } from "../../data/index.js";
+import { metrics } from "../../data";
 
 const { header, title } = sections.about;
 ---
@@ -34,6 +36,10 @@ const { header, title } = sections.about;
           application plus facile à maintenir.
         </p>
       </div>
+    </div>
+
+    <div class="grid md:grid-cols-12 w-full justify-center gap-4 py-10">
+      {metrics.map((metric) => <MetricsCard {...metric} />)}
     </div>
   </Container>
 </Section>
