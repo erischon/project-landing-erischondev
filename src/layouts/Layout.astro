@@ -1,5 +1,7 @@
 ---
 import "@fontsource-variable/nunito-sans";
+import "@fontsource/zilla-slab";
+
 import Header from "../components/layouts/Header.astro";
 import Footer from "../components/layouts/Footer.astro";
 
@@ -34,5 +36,11 @@ const { title } = Astro.props;
 <style is:global>
   body {
     font-family: "Nunito Sans Variable", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Zilla Slab", sans-serif;
   }
 </style>
