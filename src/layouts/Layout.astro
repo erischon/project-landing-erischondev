@@ -1,5 +1,4 @@
 ---
-import { Analytics } from "@vercel/analytics/react";
 import "@fontsource-variable/nunito-sans";
 import "@fontsource/zilla-slab";
 
@@ -21,6 +20,16 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    {/* Analytics */}
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 
     {/* SEO */}
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -45,8 +54,6 @@ const { title } = Astro.props;
   </head>
 
   <body class="">
-    <Analytics />
-
     <Header />
 
     <slot />
